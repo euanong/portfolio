@@ -1,5 +1,5 @@
 //from three.js examples
-var SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;
+var SEPARATION = 100, AMOUNTX = 80, AMOUNTY = 80;
 var wcanvas;
 var camera, scene, renderer;
 var particles, particle, count = 0;
@@ -78,7 +78,7 @@ function animate() {
 	render();
 }
 function render() {
-	camera.position.x += ( mouseX - camera.position.x ) * .05;
+	camera.position.x += ( mouseX - camera.position.x ) * .03;
 	camera.position.y = 500;
 	camera.lookAt( scene.position );
 	var i = 0;
