@@ -9,11 +9,18 @@ var scaleFactor = 1;
 var windowHalfY = scaleFactor * window.innerHeight / 2;
 //var dotcolour = 0x8effe6;
 var dotcolour = 0x20cabd;
+var speed=0.05;
+var mousespeed=0.01;
+var now;
+var then = new Date().getTime();
+var startx = -800;
+
 function init() {
 	wcanvas = document.getElementById("waves_canvas");
 	wcanvas.width = window.innerWidth;
 	wcanvas.height = scaleFactor*window.innerHeight;
 	camera = new THREE.PerspectiveCamera( 60, window.innerWidth / (scaleFactor * window.innerHeight), 1, 10000 );
+	camera.position.x = startx;
 	camera.position.z = 1000;
 	scene = new THREE.Scene();
 	particles = new Array();
@@ -78,8 +85,11 @@ function animate() {
 	render();
 }
 function render() {
-	camera.position.x += ( mouseX - camera.position.x ) * .03;
+	now = new Date().getTime();
+	var delta = now-then;
+	camera.position.x += ( mouseX - (camera.position.x-startx) ) * (mousespeed*delta)*(60/1000);
 	camera.position.y = 500;
+	console.log(camera.position.x);
 	camera.lookAt( scene.position );
 	var i = 0;
 	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
@@ -92,7 +102,9 @@ function render() {
 		}
 	}
 	renderer.render( scene, camera );
-	count += 0.1;
+	count += (speed*delta)*(60/1000);
+	//count += 0.1;
+	then=now;
 }
 
 window.onload = function(){

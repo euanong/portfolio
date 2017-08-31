@@ -71,3 +71,11 @@ body {
 	color: #fff;
 	cursor: pointer;
 }
+
+.heading{
+	width: 100vw;
+    text-align: center;
+    font-size: 30em;
+    font-weight: 300;
+    margin-top: 5vh;
+}
