@@ -1,6 +1,7 @@
 body {
 	font-size: 1.27px;
 	font-family: "Lato";
+	margin: 0px;
 }
 
 #waves_canvas {
@@ -35,6 +36,11 @@ body {
   	transform: translate(-50%, -50%);;
     left: 50%;
     width: 80vw;
+}
+
+.section_container{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 .subtitle{
@@ -77,5 +83,36 @@ body {
     text-align: center;
     font-size: 30em;
     font-weight: 300;
-    margin-top: 5vh;
+}
+
+.items{
+	display: flex;
+	flex-flow: row-wrap;
+}
+
+.item{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph{
+    font-size: 18em;
+    font-weight: 300;
+    margin-right: 5vw;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.sectionbreak{
+	border-color: red;
+    border-color: #11e8bb;
+    border-image: -moz-linear-gradient(left, #11e8bb 0%, #8200c9 100%);
+    border-image: -webkit-linear-gradient(left, #11e8bb 0%,#8200c9 100%);
+    border-image: linear-gradient(to right, #11e8bb 0%,#8200c9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11e8bb', endColorstr='#8200c9',GradientType=0 );
+    border-image-slice: 1;
+    width: 80vw;
 }
