@@ -89,7 +89,7 @@ function render() {
 	var delta = now-then;
 	camera.position.x += ( mouseX - (camera.position.x-startx) ) * (mousespeed*delta)*(60/1000);
 	camera.position.y = 500;
-	console.log(camera.position.x);
+	//console.log(camera.position.x);
 	camera.lookAt( scene.position );
 	var i = 0;
 	for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
@@ -110,4 +110,5 @@ function render() {
 window.onload = function(){
 	init();
 	animate();
+	type();
 }

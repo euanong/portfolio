@@ -119,3 +119,12 @@ body {
     border-image-slice: 1;
     width: 80vw;
 }
+
+#blink_span {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {  
+  0% { opacity: 100; }
+  50% { opacity: 0; }
+}
