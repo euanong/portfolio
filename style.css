@@ -128,3 +128,32 @@ body {
   0% { opacity: 100; }
   50% { opacity: 0; }
 }
+
+.parallax_container {
+	background-color: red;
+    background: #8200c9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8200c9 0%, #11e8bb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #8200c9 0%,#11e8bb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #8200c9 0%,#11e8bb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8200c9', endColorstr='#11e8bb',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.quotes_container {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 25em;
+    padding-bottom: 25em;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.quote_body {
+	font-size: 35em;
+}
+
+.quote_text {
+	font-size: 25em;
+}
