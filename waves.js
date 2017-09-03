@@ -106,9 +106,3 @@ function render() {
 	//count += 0.1;
 	then=now;
 }
-
-window.onload = function(){
-	init();
-	animate();
-	type();
-}

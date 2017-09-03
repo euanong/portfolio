@@ -176,3 +176,41 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.project_card {
+    width: 320px;
+    max-width: 21.875rem;
+    margin: 8px;
+}
+
+.project_card__16-9-media {
+	background-image: url("imgs/16-9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12.313rem;
+}
+
+.project_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*width: calc(308px * 3);*/
+    margin: 0 auto;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.project_card__title {
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.project_card__subtitle {
+    font-family: "Lato";
+    font-weight: 300;
+    min-height: 40px;
+}
+
+.project_card__action {
+    font-family: "Lato";
+}
