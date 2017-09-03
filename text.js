@@ -1,4 +1,5 @@
-words = ["student", "full-stack developer", "sysadmin", "mathlete", "competitive programmer", "sophist"];
+//words = ["student", "full-stack developer", "sysadmin", "mathlete", "competitive programmer", "sophist"];
+words = ["student", "full-stack developer", "sysadmin", "mathlete", "competitive programmer"];
 betweenCharTime = 70;
 betweenWordTime = 1000;
 wordElement = null;
