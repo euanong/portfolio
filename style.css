@@ -188,6 +188,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     height: 12.313rem;
+    background-position: top center;
 }
 
 .project_items {

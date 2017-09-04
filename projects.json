@@ -2,24 +2,142 @@
 	{
 		"year":"2017",
 		"data": [
+			{
+				"title":"Portfolio",
+				"subtitle":"This website - a responsive one-page showcase of my projects.",
+				"button":"View source on GitHub",
+				"url":"https://github.com/eohomegrownapps/portfolio",
+				"image":"img_portfolio.png"
+			},
+			{
+				"title":"Prep",
+				"subtitle":"A minimalist online homework diary. Work in progress.",
+				"button":"Visit website",
+				"url":"https://prep.ml",
+				"image":"img_prep.png"
+			},
+			{
+				"title":"20twenty20",
+				"subtitle":"A macOS app to help prevent eye strain by following the 20-20-20 rule.",
+				"button":"Download from GitHub",
+				"url":"https://github.com/eohomegrownapps/20twenty20",
+				"image":"img_20twenty20.png"
+			},
+			{
+				"title":"tilt.",
+				"subtitle":"A node/websockets multi-device experiment.",
+				"button":"Visit website",
+				"url":"http://tilt.ga",
+				"image":"img_tilt.png"
+			},
+			{
+				"title":"Terminal Puzzle",
+				"subtitle":"An engine for 'terminal puzzle' games.",
+				"button":"View source on GitHub",
+				"url":"https://github.com/eohomegrownapps/terminal-puzzle",
+				"image":"16-9.jpg"
+			},
+			{
+				"title":"Never Let Me Go",
+				"subtitle":"An online version of the book for revision purposes. (sorry, Kazuo Ishiguro)",
+				"button":"Visit website",
+				"url":"https://homegrownapps.tk/neverletmego",
+				"image":"img_nlmg.png"
+			}
 		]
 	},
 
 	{
 		"year":"2016",
 		"data": [
+			{
+				"title":"Markov Music",
+				"subtitle":"An attempt at generating 'music' with MIDI files and Markov chains.",
+				"button":"View source on GitHub",
+				"url":"https://github.com/eohomegrownapps/markov-music",
+				"image":"16-9.jpg"
+			},
+			{
+				"title":"MyTimer",
+				"subtitle":"Elegant, customisable timers for the 21st century.",
+				"button":"Visit website",
+				"url":"http://mytimer.tk",
+				"image":"img_mytimer.png"
+			},
+			{
+				"title":"Genetic Algorithms",
+				"subtitle":"A basic genetic algorithm library in Python.",
+				"button":"View source on GitHub",
+				"url":"https://github.com/eohomegrownapps/genetic-algorithms",
+				"image":"16-9.jpg"
+			},
+			{
+				"title":"Gravity Maze",
+				"subtitle":"Fall down the maze; don't touch the walls. Simple, but strangely addictive.",
+				"button":"Download from Google Play",
+				"url":"https://play.google.com/store/apps/details?id=com.homegrownapps.tiltmaze&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+				"image":"img_gravitymaze.png"
+			},
+			{
+				"title":"Patrol Points",
+				"subtitle":"A little management thing for the 10th Oxford (Marston) Scout troop.",
+				"button":"Visit website",
+				"url":"https://homegrownapps.tk/patrols",
+				"image":"img_patrols.png"
+			},
+			{
+				"title":"flock",
+				"subtitle":"A boids simulation in HTML5.",
+				"button":"Visit website",
+				"url":"https://homegrownapps.tk/flock",
+				"image":"img_flock.png"
+			}
 		]
 	},
 	
 	{
 		"year":"2015",
 		"data": [
+			{
+				"title":"Learning Chatbot",
+				"subtitle":"A simple learning chatbot written in Python.",
+				"button":"View source on GitHub",
+				"url":"https://github.com/eohomegrownapps/learning-chatbot",
+				"image":"img_learningchatbot.png"
+			},
+			{
+				"title":"Go, Chicken, Go!",
+				"subtitle":"A poultry-themed infinite jumping game.",
+				"button":"Download from Google Play",
+				"url":"https://play.google.com/store/apps/details?id=com.homegrownapps.gochickengo&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-ap-PartBadge-Mar2515-1",
+				"image":"img_gochickengo.png"
+			}
 		]
 	},
 	
 	{
 		"year":"2014",
 		"data": [
+			{
+				"title":"WikiQuiz",
+				"subtitle":"An app generating quizzes from Wikipedia articles. Created for YRS FoC 2014.",
+				"button":"View source on GitHub",
+				"url":"https://github.com/eohomegrownapps/learning-chatbot",
+				"image":"img_wikiquiz.png"
+			}
+		]
+	},
+
+	{
+		"year":"2013",
+		"data": [
+			{
+				"title":"BallChase",
+				"subtitle":"A basic reaction game with a PHP score server.",
+				"button":"Download from Google Play",
+				"url":"https://play.google.com/store/apps/details?id=com.homegrownapps.ballchase&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-ap-PartBadge-Mar2515-1",
+				"image":"img_ballchase.png"
+			}
 		]
 	}
 ]

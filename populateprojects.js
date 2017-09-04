@@ -58,5 +58,6 @@ function populateProjects(){
 				addProject(projects_json[key]["data"][i],element);
 			}
 		}
+		doResize();
 	});
 }
