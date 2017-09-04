@@ -184,8 +184,8 @@ body {
 }
 
 .project_card__16-9-media {
-	background-image: url("imgs/16-9.jpg");
-    background-size: cover;
+	/*background-image: url("imgs/16-9.jpg");*/
+    background-size: contain;
     background-repeat: no-repeat;
     height: 12.313rem;
 }

@@ -3,4 +3,5 @@ window.onload = function(){
 	animate(); //waves.js
 	type(); //text.js
 	doResize(); //resizer.js
+	populateProjects();
 }
