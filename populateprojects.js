@@ -55,7 +55,15 @@ function populateProjects(){
 			addElement(projects_json[key].year);
 			var element = document.getElementById("PROJECTS_"+projects_json[key].year);
 			for (var i = 0; i<projects_json[key].data.length; i++){
-				addProject(projects_json[key]["data"][i],element);
+				var checkIfNoDisplay = false;
+				if (projects_json[key]["data"][i].hasOwnProperty("display")){
+					if (projects_json[key]["data"][i]["display"]==false){
+						checkIfNoDisplay=true;
+					}
+				}
+				if (!checkIfNoDisplay){
+					addProject(projects_json[key]["data"][i],element);
+				}
 			}
 		}
 		doResize();

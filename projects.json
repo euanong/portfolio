@@ -42,7 +42,8 @@
 				"subtitle":"An online version of the book for revision purposes. (sorry, Kazuo Ishiguro)",
 				"button":"Visit website",
 				"url":"https://homegrownapps.tk/neverletmego",
-				"image":"img_nlmg.png"
+				"image":"img_nlmg.png",
+				"display":false
 			}
 		]
 	},
