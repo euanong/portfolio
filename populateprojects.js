@@ -12,7 +12,7 @@ var project_layout = '\
 		<h2 class="mdc-card__subtitle project_card__subtitle">{PROJECT_SUBTITLE}</h2>\
 	</section>\
 	<section class="mdc-card__actions">\
-		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" href="{PROJECT_URL}">{PROJECT_BTN_ACTION}</a>\
+		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="{PROJECT_URL}">{PROJECT_BTN_ACTION}</a>\
 	</section>\
 </div>';
 
