@@ -3,6 +3,13 @@
 		"year":"2017",
 		"data": [
 			{
+				"title":"Google Code In - Winner",
+				"subtitle":"A global, online contest in open source development.",
+				"button":"Visit website",
+				"url":"https://opensource.googleblog.com/2018/01/google-code-in-2017-winners.html",
+				"image":"img_gci.png"
+			},
+			{
 				"title":"Portfolio",
 				"subtitle":"This website - a responsive one-page showcase of my projects.",
 				"button":"View source on GitHub",
