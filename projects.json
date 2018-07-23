@@ -1,5 +1,25 @@
 [
 	{
+		"year":"2018",
+		"data": [
+			{
+				"title":"Phone Gesture Recognition with Neural Networks",
+				"subtitle":"A Wolfram High School Summer Camp project",
+				"button":"Visit website",
+				"url":"http://community.wolfram.com/groups/-/m/t/1386392",
+				"image":"img_gestures.gif"
+			},
+			{
+				"title":"A Machine Learning Analysis of the Halting Problem",
+				"subtitle":"A Wolfram High School Summer Camp project. Work in progress.",
+				"button":"Visit website",
+				"url":"http://community.wolfram.com/groups/-/m/t/1384403",
+				"image":"img_halting.png"
+			}
+		]
+	},
+
+	{
 		"year":"2017",
 		"data": [
 			{

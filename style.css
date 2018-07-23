@@ -189,6 +189,7 @@ body {
     background-repeat: no-repeat;
     height: 12.313rem;
     background-position: top center;
+    flex-grow: 1;
 }
 
 .project_items {
