@@ -1,5 +1,17 @@
 [
 	{
+		"year":"2019",
+		"data": [
+			{
+				"title":"Competitive Programming",
+				"subtitle":"I represented the UK at the International Olympiad in Informatics in Azerbaijan, placing 221st in the world.",
+				"button":"Visit website",
+				"url":"https://stats.ioinformatics.org/people/6987",
+				"image":"img_ioi.svg"
+			}
+		]
+	},
+	{
 		"year":"2018",
 		"data": [
 			{
@@ -7,7 +19,7 @@
 				"subtitle":"A Wolfram High School Summer Camp project",
 				"button":"Visit website",
 				"url":"http://community.wolfram.com/groups/-/m/t/1386392",
-				"image":"img_gestures.gif"
+				"image":"img_gestures.png"
 			},
 			{
 				"title":"A Machine Learning Analysis of the Halting Problem",

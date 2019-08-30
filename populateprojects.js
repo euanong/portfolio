@@ -6,7 +6,7 @@ var year_layout = '\
 
 var project_layout = '\
 <div class="mdc-card project_card">\
-	<section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/{PROJECT_IMAGE});"></section>\
+	<a target="_blank" style="flex-grow:1;" href="{PROJECT_URL}"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/{PROJECT_IMAGE});"></section></a>\
 	<section class="mdc-card__primary">\
 		<h1 class="mdc-card__title mdc-card__title--large project_card__title">{PROJECT_TITLE}</h1>\
 		<h2 class="mdc-card__subtitle project_card__subtitle">{PROJECT_SUBTITLE}</h2>\

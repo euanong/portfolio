@@ -20,7 +20,7 @@ function init() {
 	wcanvas.width = window.innerWidth;
 	wcanvas.height = scaleFactor*window.innerHeight;
 	camera = new THREE.PerspectiveCamera( 60, window.innerWidth / (scaleFactor * window.innerHeight), 1, 10000 );
-	camera.position.x = -20000;
+	camera.position.x = -10000;
 	camera.position.z = 1000;
 	scene = new THREE.Scene();
 	particles = new Array();
@@ -81,7 +81,9 @@ function onDocumentTouchMove( event ) {
 }
 //
 function animate() {
-	requestAnimationFrame( animate );
+	setTimeout( function() {
+        requestAnimationFrame( animate );
+    }, 1000 / 30 );
 	render();
 }
 function render() {
