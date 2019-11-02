@@ -21,6 +21,7 @@ function doResize() {
 	for(i=0; i<headers.length; i++) {
     	headers[i].style.width = newWidth.toString()+"px";
 	}
+	onWindowResize();
 }
 
 window.addEventListener('resize', doResize);
