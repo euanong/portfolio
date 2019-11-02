@@ -4,9 +4,9 @@ var wcanvas;
 var camera, scene, renderer;
 var particles, particle, count = 0;
 var mouseX = 0, mouseY = 0;
-var windowHalfX = window.innerWidth / 2;
+var windowHalfX = document.documentElement.clientWidth / 2;
 var scaleFactor = 1;
-var windowHalfY = scaleFactor * window.innerHeight / 2;
+var windowHalfY = scaleFactor * document.documentElement.clientHeight / 2;
 //var dotcolour = 0x8effe6;
 var dotcolour = 0x20cabd;
 var speed=0.05;
@@ -17,9 +17,9 @@ var startx = -800;
 
 function init() {
 	wcanvas = document.getElementById("waves_canvas");
-	wcanvas.width = window.innerWidth;
-	wcanvas.height = scaleFactor*window.innerHeight;
-	camera = new THREE.PerspectiveCamera( 60, window.innerWidth / (scaleFactor * window.innerHeight), 1, 10000 );
+	wcanvas.width = document.documentElement.clientWidth;
+	wcanvas.height = scaleFactor*document.documentElement.clientHeight;
+	camera = new THREE.PerspectiveCamera( 60, document.documentElement.clientWidth / (scaleFactor * document.documentElement.clientHeight), 1, 10000 );
 	camera.position.x = -10000;
 	camera.position.z = 1000;
 	scene = new THREE.Scene();
@@ -52,8 +52,8 @@ function init() {
 	window.addEventListener( 'resize', onWindowResize, false );
 }
 function onWindowResize() {
-	wcanvas.width = window.innerWidth;
-	wcanvas.height = scaleFactor*window.innerHeight;
+	wcanvas.width = document.documentElement.clientWidth;
+	wcanvas.height = scaleFactor*document.documentElement.clientHeight;
 	windowHalfX = wcanvas.width / 2;
 	windowHalfY = wcanvas.height / 2;
 	camera.aspect = wcanvas.width / wcanvas.height;
