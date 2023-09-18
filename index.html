@@ -1,100 +1,294 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
+
 <head>
-	<title>Euan Ong</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/material-design.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47815750-5"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-47815750-5');
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/three.min.js"></script>
-	<script src="js/Projector.js"></script>
-	<script src="js/CanvasRenderer.js"></script>
-	<script src="text.js"></script>
-	<script src="waves.js"></script>
-	<script src="resizer.js"></script>
-	<!--<script src="populateprojects.js"></script>-->
-	<!--place scripts before this tag-->
-	<script src="onload.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Euan Ong</title>
+
+  <meta name="author" content="Euan Ong">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
+
 <body>
-	<div class="waves_container">
-		<canvas id="waves_canvas"></canvas>
-		<div class="title_container">
-			<div class="title">
-				<span style="font-weight: 200">EUAN</span> <span style="font-weight: 300">ONG</span>
-			</div>
-			<div class="subtitle">
-				STUDENT <!--&middot;-->&#124; CREATIVE TECHNOLOGIST
-			</div>
-			<div class="subsubtitle">
-				ASPIRING ALGORITHMS AFICIONADO
-			</div>
-		</div>
-		<div class="down_arrow_container">
-			<i class="fa fa-angle-down down_button" id="scroll_btn"></i>
-		</div>
-	</div>
-	<div id="about_container" class="section_container">
-		<div class="heading">ABOUT</div>
-		<div class="items">
-			<div class="item">
-				<img src="imgs/img_about_3.jpg" class="circle" style="margin-top: 5vh;margin-bottom: 5vh;margin-left: auto;margin-right: auto;padding: 20px;">
-			</div>
-			<div class="item">
-				<div class="paragraph">
-					<p style="height: calc(150px - 7vw);min-height: 30px;">
-						Hi. I'm Euan Ong, a secondary school <span id="names_span"></span><span id="blink_span">_</span>
-					</p>
-					<p>
-						My aim is to create elegant solutions to everyday problems with technology. In reality, I end up kludging together hackish solutions to niche problems with technology... but I'm learning. 
-					</p>
-					<p>
-						Over the past few years, I have produced a number of full-stack JavaScript/PHP webapps and Android apps, and have dabbled in Python and Node.js. More recently, I have started contributing to the open-source community <a href="https://sugarlabs.org">Sugar Labs</a>. In addition to these pursuits, I enjoy solving algorithm and competitive programming puzzles in C++, mostly from dunjudge.me and <a href="https://codeforces.com/profile/eohomegrownapps">CodeForces</a>. I also have built and maintain my own server, on which this site is hosted.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--<hr class="sectionbreak">-->
-	<div class="parallax_container section_container">
-		<div class="quotes_container">
-			<p class="quote_body">
-				"People create programs to direct processes. In effect, we conjure the spirits of the computer with our spells."
-			</p>
-			<p class="quote_text">
-				- Structure and Interpretation of Computer Programs
-			</p>
-		</div>
-	</div>
-	<div id="projects_container" class="section_container">
-		<div class="heading">PROJECTS</div>
-			<div class="subgroup_title" style="width: 1008px;">2019</div><hr class="sectionbreak" style="width: 1008px;"><div class="items project_items" id="PROJECTS_2019" style="width: 1008px;"><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://stats.ioinformatics.org/people/6987"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_ioi.svg);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Competitive Programming</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">I represented the UK at the International Olympiad in Informatics in Azerbaijan, placing 221st in the world.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://stats.ioinformatics.org/people/6987">Visit website</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="files/report.pdf"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_waynflete.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Object Detection in Thermal Imagery via CNNs</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">Deep learning methods for object detection from thermal images, with applications in the development of navigational aids for search and rescue operations.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="files/report.pdf">View report</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://homegrownapps.tk/orbitals"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_orbitals.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Orbital Visualiser</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">3D visualisations of atomic orbitals using the solution to the Schr&#246;dinger equation for the hydrogen atom.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://homegrownapps.tk/orbitals">Visit website</a>	</section></div></div><div class="subgroup_title" style="width: 1008px;">2018</div><hr class="sectionbreak" style="width: 1008px;"><div class="items project_items" id="PROJECTS_2018" style="width: 1008px;"><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://edtechnology.co.uk/Article/final-stage-of-cyber-discovery-finishes-in-london/"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_cd.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Cyber Discovery - Best Overall Performer (London)</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A competition covering cybersecurity disciplines such as penetration testing, digital forensics and cryptography.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://edtechnology.co.uk/Article/final-stage-of-cyber-discovery-finishes-in-london/">View article</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="http://community.wolfram.com/groups/-/m/t/1386392"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_gestures.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Phone Gesture Recognition with Neural Networks</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A Wolfram High School Summer Camp project</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="http://community.wolfram.com/groups/-/m/t/1386392">Visit website</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="http://community.wolfram.com/groups/-/m/t/1384403"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_halting.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">A Machine Learning Analysis of the Halting Problem</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A Wolfram High School Summer Camp project. Work in progress.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="http://community.wolfram.com/groups/-/m/t/1384403">Visit website</a>	</section></div></div><div class="subgroup_title" style="width: 1008px;">2017</div><hr class="sectionbreak" style="width: 1008px;"><div class="items project_items" id="PROJECTS_2017" style="width: 1008px;"><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://opensource.googleblog.com/2018/01/google-code-in-2017-winners.html"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_gci.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Google Code In - Winner</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A global, online contest in open source development.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://opensource.googleblog.com/2018/01/google-code-in-2017-winners.html">Visit website</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://github.com/eohomegrownapps/portfolio"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_portfolio.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Portfolio</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">This website - a responsive one-page showcase of my projects.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://github.com/eohomegrownapps/portfolio">View source on GitHub</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://prep.ml"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_prep.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Prep</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A minimalist online homework diary. Work in progress.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://prep.ml">Visit website</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://github.com/eohomegrownapps/20twenty20"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_20twenty20.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">20twenty20</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A macOS app to help prevent eye strain by following the 20-20-20 rule.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://github.com/eohomegrownapps/20twenty20">Download from GitHub</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="http://tilt.ga"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_tilt.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">tilt.</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A node/websockets multi-device experiment.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="http://tilt.ga">Visit website</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://github.com/eohomegrownapps/terminal-puzzle"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/16-9.jpg);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Terminal Puzzle</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">An engine for 'terminal puzzle' games.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://github.com/eohomegrownapps/terminal-puzzle">View source on GitHub</a>	</section></div></div><div class="subgroup_title" style="width: 1008px;">2016</div><hr class="sectionbreak" style="width: 1008px;"><div class="items project_items" id="PROJECTS_2016" style="width: 1008px;"><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://github.com/eohomegrownapps/markov-music"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/16-9.jpg);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Markov Music</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">An attempt at generating 'music' with MIDI files and Markov chains.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://github.com/eohomegrownapps/markov-music">View source on GitHub</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="http://mytimer.tk"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_mytimer.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">MyTimer</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">Elegant, customisable timers for the 21st century.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="http://mytimer.tk">Visit website</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://github.com/eohomegrownapps/geneticalgorithmlib"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/16-9.jpg);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Genetic Algorithms</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A basic genetic algorithm library in Python.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://github.com/eohomegrownapps/geneticalgorithmlib">View source on GitHub</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://play.google.com/store/apps/details?id=com.homegrownapps.tiltmaze&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_gravitymaze.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Gravity Maze</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">Fall down the maze; don't touch the walls. Simple, but strangely addictive.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://play.google.com/store/apps/details?id=com.homegrownapps.tiltmaze&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Download from Google Play</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://homegrownapps.tk/patrols"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_patrols.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Patrol Points</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A little management thing for the 10th Oxford (Marston) Scout troop.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://homegrownapps.tk/patrols">Visit website</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://homegrownapps.tk/flock"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_flock.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">flock</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A boids simulation in HTML5.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://homegrownapps.tk/flock">Visit website</a>	</section></div></div><div class="subgroup_title" style="width: 1008px;">2015</div><hr class="sectionbreak" style="width: 1008px;"><div class="items project_items" id="PROJECTS_2015" style="width: 1008px;"><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://github.com/eohomegrownapps/learning-chatbot"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_learningchatbot.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Learning Chatbot</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A simple learning chatbot written in Python.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://github.com/eohomegrownapps/learning-chatbot">View source on GitHub</a>	</section></div><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://play.google.com/store/apps/details?id=com.homegrownapps.gochickengo&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-ap-PartBadge-Mar2515-1"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_gochickengo.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">Go, Chicken, Go!</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A poultry-themed infinite jumping game.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://play.google.com/store/apps/details?id=com.homegrownapps.gochickengo&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-ap-PartBadge-Mar2515-1">Download from Google Play</a>	</section></div></div><div class="subgroup_title" style="width: 1008px;">2014</div><hr class="sectionbreak" style="width: 1008px;"><div class="items project_items" id="PROJECTS_2014" style="width: 1008px;"><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://github.com/eohomegrownapps/wikiquiz"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_wikiquiz.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">WikiQuiz</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">An app generating quizzes from Wikipedia articles. Created for YRS FoC 2014.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://github.com/eohomegrownapps/wikiquiz">View source on GitHub</a>	</section></div></div><div class="subgroup_title" style="width: 1008px;">2013</div><hr class="sectionbreak" style="width: 1008px;"><div class="items project_items" id="PROJECTS_2013" style="width: 1008px;"><div class="mdc-card project_card">	<a target="_blank" style="flex-grow:1;" href="https://play.google.com/store/apps/details?id=com.homegrownapps.ballchase&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-ap-PartBadge-Mar2515-1"><section class="mdc-card__media project_card__16-9-media" style="background-image: url(imgs/img_ballchase.png);"></section></a>	<section class="mdc-card__primary">		<h1 class="mdc-card__title mdc-card__title--large project_card__title">BallChase</h1>		<h2 class="mdc-card__subtitle project_card__subtitle">A basic reaction game with a PHP score server.</h2>	</section>	<section class="mdc-card__actions">		<a class="mdc-button mdc-button--compact mdc-card__action project_card__action" target="_blank" href="https://play.google.com/store/apps/details?id=com.homegrownapps.ballchase&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-ap-PartBadge-Mar2515-1">Download from Google Play</a>	</section></div></div></div>
-	</div>
-	<script type="text/javascript">
-		function scrollTo(id){
-			$('html, body').animate({
-			    scrollTop: $("#"+id).offset().top - window.innerHeight*5/100 + 5
-			}, 1000);
-			
-			//$(document.body).animate({
-			//    'scrollTop':   $('#'+id).offset().top
-			//}, 2000);
-			
-			//var element_to_scroll_to = document.getElementById(id);
-			//element_to_scroll_to.scrollIntoView();
-		}
-		document.getElementById("scroll_btn").onclick=function(){scrollTo("about_container");};
-	</script>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p class="name" style="text-align: center;">
+                    Euan Ong
+                  </p>
+                  <p>I am a final-year undergraduate at the University of Cambridge, studying Computer Science.
+                  </p>
+                  <p>
+                    My ambition is to develop powerful, yet safe and <a
+                      href="https://transformer-circuits.pub/">interpretable</a>
+                    abstract reasoners, whose
+                    internal
+                    state and behaviour remain <a href="https://arxiv.org/abs/2305.02469">transparent to the end
+                      user</a>.
+                  </p>
+                  <p>
+                    To this end, I'm particularly interested in exploring how the mathematical toolkits we use to
+                    understand and structure programs ‒ such as <a
+                      href="https://ai.stanford.edu/blog/causal-abstraction/">formal methods</a>,
+                    <a href="https://colah.github.io/posts/2015-09-NN-Types-FP/">types</a> and <a
+                      href="https://cats.for.ai/">category theory</a> ‒ can
+                    inspire new ways
+                    to both reverse-engineer existing neural networks, and build scalable neurosymbolic systems.
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:euan.l.y.ong+site@gmail.com">Email</a> &nbsp;/&nbsp;
+                    <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
+                    <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                    <a href="https://scholar.google.com/citations?user=vT2qcI0AAAAJ&hl=en">Google Scholar</a>
+                    &nbsp;/&nbsp;
+                    <a href="https://twitter.com/euan_ong/">Twitter</a> &nbsp;/&nbsp;
+                    <a href="https://www.linkedin.com/in/euanong/">LinkedIn</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/euanong/">Github</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:40%;max-width:40%">
+                  <a href="images/euanong.jpeg"><img style="width:100%;max-width:100%" alt="profile photo"
+                      src="images/euanong_circle.png" class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <h2>Research</h2>
+                  <p>
+                    So far, my research has broadly focused on studying the behaviour of neural networks <i>in
+                      vitro</i>:
+                    understanding both how they generalise when learning to perform abstract tasks, and
+                    what
+                    this tells us about the algorithms they've learned in order to do so.
+                  </p>
+                  <p>
+                    I'm currently probing the foundations of <a href="https://arxiv.org/abs/2105.02761">neural
+                      algorithmic
+                      reasoning</a>, exploring attacks on vision-language models, and poking language model
+                    representations
+                    with a stick.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+              <tr>
+                <td colspan="2">
+                  <h3 style="padding-left: 20px;">Published work</h3>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/lcm.png" alt="monoids" width="160" height="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://proceedings.mlr.press/v198/ong22a/ong22a.pdf">
+                    <span class="papertitle">Learnable Commutative Monoids for Graph Neural Networks</span>
+                  </a>
+                  <br>
+                  <strong>Euan Ong</strong>, <a href="https://petar-v.com/">Petar Veličković</a>
+                  <br>
+                  <em>Learning on Graphs</em>, 2022
+                  <br>
+                  <a href="https://arxiv.org/abs/2212.08541">arXiv</a>
+                  /
+                  <a href="https://openreview.net/forum?id=WtFobB28VDey">reviews</a>
+                  /
+                  <a href="https://learnable-commutative-monoids.notion.site/">project page</a>
+                  <p>Using ideas from abstract algebra and functional programming, we built a new GNN aggregator that
+                    beats the state of the art on complex aggregation problems (especially out-of-distribution) while
+                    remaining efficient and parallelisable on large graphs.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <h3 style="padding-left: 20px;">Informal projects</h3>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/ddl.png" alt="attention heads" width="160" height="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <!-- <a href="https://example.com"> -->
+                  <a>
+                    <span class="papertitle">Dissecting Deep Learning for Systematic Generalisation</span>
+                  </a>
+                  <br>
+                  <strong>Euan Ong</strong>, <a href="https://www.linkedin.com/in/etaash-katiyar-77108818b/">Etaash
+                    Katiyar</a>, <a href="https://www.linkedin.com/in/kai-en-chong-a10a9a18b">Kai-En Chong</a>, <a
+                    href="https://albertqjiang.github.io/">Albert
+                    Qiaochu Jiang</a>
+                  <br>
+                  <em>Informal research</em>, 2021
+                  <br>
+                  <!-- <a href="https://example.com">project page</a>
+                  /
+                  <a href="https://example.com">arXiv</a>
+                  /
+                  <a href="https://example.com">reviews</a>
+                  /
+                  <a href="https://example.com">bibTeX</a> -->
+                  <p>We investigated the capabilities of transformers to systematically generalise when learning to
+                    recognise formal languages (such as
+                    <span style="font-variant: small-caps;">Parity</span> and <span
+                      style="font-variant: small-caps;">2-Dyck</span>), empirically corroborating various <a
+                      href="https://arxiv.org/abs/1906.06755">theoretical claims</a> about transformer generalisation.
+                    Inspired
+                    by our observations, we
+                    derived a parallel, stackless algorithm for recognising <span
+                      style="font-variant: small-caps;">2-Dyck</span> that could (in principle) be
+                    implemented by a transformer with a constant number of attention layers.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+                  <img src="images/oxtd.png" alt="oxtd" width="140" height="140">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://drive.google.com/file/d/1UKkUcnq0CX-aq3c3o_-9xJdy7rKsytZ6/view?usp=sharing">
+                    <span class="papertitle">Object Detection in Thermal Imagery via Convolutional Neural
+                      Networks</span>
+                  </a>
+                  <br>
+                  <strong>Euan Ong</strong>, <a href="https://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>, <a
+                    href="https://portobgusmao.com/">Pedro Porto Barque de Gusmão</a>
+                  <br>
+                  <em>Technical report</em>, 2019
+                  <br>
+                  <!-- <a href="https://example.com">project page</a>
+                  /
+                  <a href="https://example.com">arXiv</a>
+                  /
+                  <a href="https://example.com">reviews</a>
+                  /
+                  <a href="https://example.com">bibTeX</a> -->
+                  <p>
+                    We trained a Faster R-CNN object detection network to identify landmarks (e.g. doors and windows) in
+                    thermal images of indoor environments, with applications in the development of navigational aids for
+                    search and rescue operations.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Community</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Miscellanea</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%" align="center" border="0" cellpadding="20">
+            <tbody>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+                <td width="75%" valign="center">
+                  <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                  <br>
+                  <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                  <br>
+                  <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member,
+                    CVPR 2021</a>
+                  <br>
+                  <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                  <br>
+                  <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/cs188.jpg" alt="cs188">
+                </td>
+                <td width="75%" valign="center">
+                  <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor,
+                    CS188 Spring 2011</a>
+                  <br>
+                  <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor,
+                    CS188 Fall 2010</a>
+                  <br>
+                  <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd
+                    Edition</a>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                  <h2>Basically <br> Blog Posts</h2>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+                  <br>
+                  <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain
+                    Functions</a>
+                  <br>
+                  <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+                  <br>
+                  <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How
+                    Can Academics Adapt?</a>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table> -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    Design inspired by <a href="https://github.com/jonbarron/jonbarron_website"
+                      style="font-size:small">Jon Barron</a>'s site.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+  </table>
 </body>
+
 </html>
