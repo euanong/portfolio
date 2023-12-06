@@ -37,7 +37,7 @@
                   <p class="name" style="text-align: center;">
                     Euan Ong
                   </p>
-                  <p>I've just finished my undergraduate degree in Computer Science at the University of Cambridge, and I'm currently a research assistant at <a href="https://mlatcl.github.io/">ml@cl</a> under <a href="https://www.inference.vc/">Dr Ferenc Huszár</a>.
+                  <p>I've just finished my undergraduate degree in Computer Science at the University of Cambridge (where I ranked 1/120 every year), and I'm currently a research assistant at <a href="https://mlatcl.github.io/">ml@cl</a> under <a href="https://www.inference.vc/">Dr Ferenc Huszár</a>.
                   </p>
                   <p>
                     My ambition is to develop powerful, yet safe and <a
@@ -107,6 +107,55 @@
                   <h3 style="padding-left: 20px;">Published work</h3>
                 </td>
               </tr>
+              
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/nap.png" alt="nap" width="150" style="margin: 5px">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-990.pdf">
+                    <span class="papertitle">Probing the Foundations of Neural Algorithmic Reasoning</span>
+                  </a>
+                  <br>
+                  <strong>Euan Ong</strong>
+                  <br>
+                  <em>Technical Report</em>, 2023
+                  <br>
+                  <a href="https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-990.html">abstract</a>
+                  /
+                  <a href="https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-990.pdf">full text</a>
+                  /
+                  <a href="https://probing-nar.notion.site/">project page</a>
+                  <p>
+                    
+                    I explored a fundamental claim of <a href="https://arxiv.org/abs/2105.02761">neural algorithmic reasoning</a>, and found evidence to refute it through statistically robust ablations. Based on my observations, I developed a way to parallelise differentiable algorithms that preserves their efficiency and correctness guarantees while alleviating their performance bottlenecks. This work formed part of my Bachelor's thesis, which won the CS department's <em><a href="data/best_dissertation_award.pdf">Best Dissertation Award</a></em>.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/succ.png" alt="successor" width="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://openreview.net/pdf?id=kvcbV8KQsi">
+                    <span class="papertitle">Successor Heads: Recurring, Interpretable Attention Heads In The Wild</span>
+                  </a>
+                  <br>
+                  <a href="https://r-gould.github.io/">Rhys Gould</a>, 
+                  <strong>Euan Ong</strong>, 
+                  <a href="https://go281.user.srcf.net/">George Ogden</a>,
+                  <a href="https://arthurconmy.github.io/about/">Arthur Conmy</a>
+                  <br>
+                  <em>Under review at ICLR</em>, 2023
+                  <br>
+                  <a href="https://openreview.net/forum?id=kvcbV8KQsi">openreview</a>
+                  /
+                  <a href="https://successor-heads.notion.site/">project page</a>
+                  <p>We discovered <em>successor heads</em>: attention heads present in a range of LLMs that increment tokens from ordinal sequences (e.g. numbers, months and days). We isolated a common numeric subspace within embedding space, that for any given token (e.g. 'February'), encodes the index of that token within its ordinal sequence (e.g. months). We also found that numeric token representations can be decomposed into interpretable features representing the value of the token <em>mod 10</em>, which can be used to edit the numeric value of the representation via vector arithmetic.
+                  </p>
+                </td>
+              </tr>
+
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="images/hijacks.png" alt="hijacks" width="160" height="160">
@@ -121,7 +170,7 @@
                     href="http://people.eecs.berkeley.edu/~russell/">Stuart Russell</a>, <a
                     href="http://scottemmons.com/">Scott Emmons</a> (* denotes equal contribution)
                   <br>
-                  <em>Preprint</em>, 2023
+                  <em>Under review at ICLR</em>, 2023
                   <br>
                   <a href="https://arxiv.org/abs/2309.00236">arXiv</a>
                   /
@@ -130,8 +179,10 @@
                   <a href="https://twitter.com/emmons_scott/status/1704166628089565262">tweeprint</a>
                   <p>We discovered that adversarial images can hijack the behaviour of vision-language models (VLMs) at
                     runtime. We developed a general method for crafting these <i>image hijacks</i>,
-                    and trained image hijacks that force VLMs to output arbitrary text, leak their context window and
-                    comply with harmful instructions.</p>
+                    and trained image hijacks forcing VLMs to output arbitrary text, leak their context window and
+                    comply with harmful instructions. We also derived an algorithm to train hijacks forcing 
+                    VLMs to behave as though they were given an arbitrary prompt, which we used to make them believe the Eiffel Tower is in Rome.
+                  </p>
                 </td>
               </tr>
 
@@ -146,17 +197,17 @@
                   <br>
                   <strong>Euan Ong</strong>, <a href="https://petar-v.com/">Petar Veličković</a>
                   <br>
-                  <em>Learning on Graphs</em>, 2022
+                  <em>Learning on Graphs Conference</em>, 2022
                   <br>
                   <a href="https://arxiv.org/abs/2212.08541">arXiv</a>
                   /
                   <a href="https://openreview.net/forum?id=WtFobB28VDey">reviews</a>
                   /
-                  <a href="https://learnable-commutative-monoids.notion.site/">project page</a>
+                  <a href="https://monoids.notion.site/">project page</a>
                   /
                   <a href="https://twitter.com/PetarV_93/status/1602298299083628544">tweeprint</a>
                   <p>Using ideas from abstract algebra and functional programming, we built a new GNN aggregator that
-                    beats the state of the art on complex aggregation problems (especially out-of-distribution) while
+                    beats the state of the art on complex aggregation problems (especially out-of-distribution), while
                     remaining efficient and parallelisable on large graphs.</p>
                 </td>
               </tr>
