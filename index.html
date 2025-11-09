@@ -36,7 +36,10 @@
                   <p class="name" style="text-align: center;">
                     Euan Ong
                   </p>
-                  <p>I've just finished my undergraduate degree in Computer Science at the University of Cambridge (where I ranked 1st / ~120 every year). I'm currently working on adversarial robustness at <a href="https://www.anthropic.com/">Anthropic</a> for a year, before starting a Ph.D. in 'abstractions-first' mechanistic interpretability at <a href="https://csail.mit.edu/">MIT</a> with <a href="https://www.mit.edu/~jda/">Jacob Andreas</a> and <a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a>.
+                  <p>I've just finished my undergraduate degree in Computer Science at the University of Cambridge
+                    (where I ranked 1st / ~120 every year). I'm currently working on interpretability (previously
+                    adversarial robustness) at <a href="https://www.anthropic.com/">Anthropic</a>.
+                    <!--before starting a Ph.D. in 'abstractions-first' mechanistic interpretability at <a href="https://csail.mit.edu/">MIT</a> with <a href="https://www.mit.edu/~jda/">Jacob Andreas</a> and <a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a>.-->
                   </p>
                   <p>
                     My ambition is to develop powerful, yet safe and <a
@@ -47,13 +50,13 @@
                       user</a>.
                   </p>
                   <p>
-                    To this end, I'm particularly interested in exploring how the mathematical toolkits we use to
-                    understand and structure programs ‒ such as <a
-                      href="https://ai.stanford.edu/blog/causal-abstraction/">formal methods</a>,
+                    To this end, I'm interested in both pragmatic, scaling-friendly approaches to <a
+                      href="https://arxiv.org/abs/2412.08686">elicit latent knowledge</a> from neural networks, and
+                    longer-term bets exploring how the mathematical toolkits we use to understand and structure programs
+                    (such as <a href="https://ai.stanford.edu/blog/causal-abstraction/">formal methods</a>,
                     <a href="https://colah.github.io/posts/2015-09-NN-Types-FP/">types</a> and <a
-                      href="https://cats.for.ai/">category theory</a> ‒ can
-                    inspire new ways
-                    to both reverse-engineer existing neural networks, and build scalable neurosymbolic systems.
+                      href="https://cats.for.ai/">category theory</a>) could
+                    help us discover the right abstractions to reverse-engineer them.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:euan+site@ong.ac">Email</a> &nbsp;/&nbsp;
@@ -93,6 +96,9 @@
                     representations
                     with a stick.
                   </p>
+                  <p>
+                    More recently, I've also done some work on <a>adversarial robustness</a>, mostly at Anthropic.
+                  </p>
                 </td>
               </tr>
             </tbody>
@@ -103,10 +109,10 @@
 
               <tr>
                 <td colspan="2">
-                  <h3 style="padding-left: 20px;">Published work</h3>
+                  <h3 style="padding-left: 20px;">Featured work (reasoning & interpretability)</h3>
                 </td>
               </tr>
-              
+
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="images/nap.png" alt="nap" width="150" style="margin: 5px">
@@ -126,8 +132,13 @@
                   /
                   <a href="https://probing-nar.notion.site/">project page</a>
                   <p>
-                    
-                    I explored a fundamental claim of <a href="https://arxiv.org/abs/2105.02761">neural algorithmic reasoning</a>, and found evidence to refute it through statistically robust ablations. Based on my observations, I developed a way to parallelise differentiable algorithms that preserves their efficiency and correctness guarantees while alleviating their performance bottlenecks. This work formed part of my Bachelor's thesis, which won the CS department's <em><a href="data/best_dissertation_award.pdf">Best Dissertation Award</a></em>.</p>
+
+                    I explored a fundamental claim of <a href="https://arxiv.org/abs/2105.02761">neural algorithmic
+                      reasoning</a>, and found evidence to refute it through statistically robust ablations. Based on my
+                    observations, I developed a way to parallelise differentiable algorithms that preserves their
+                    efficiency and correctness guarantees while alleviating their performance bottlenecks. This work
+                    formed part of my Bachelor's thesis, which won the CS department's <em><a
+                        href="data/best_dissertation_award.pdf">Best Dissertation Award</a></em>.</p>
                 </td>
               </tr>
 
@@ -137,11 +148,12 @@
                 </td>
                 <td width="75%" valign="middle">
                   <a href="https://arxiv.org/pdf/2312.09230.pdf">
-                    <span class="papertitle">Successor Heads: Recurring, Interpretable Attention Heads In The Wild</span>
+                    <span class="papertitle">Successor Heads: Recurring, Interpretable Attention Heads In The
+                      Wild</span>
                   </a>
                   <br>
-                  <a href="https://r-gould.github.io/">Rhys Gould</a>, 
-                  <strong>Euan Ong</strong>, 
+                  <a href="https://r-gould.github.io/">Rhys Gould</a>,
+                  <strong>Euan Ong</strong>,
                   <a href="https://go281.user.srcf.net/">George Ogden</a>,
                   <a href="https://arthurconmy.github.io/about/">Arthur Conmy</a>
                   <br>
@@ -155,37 +167,12 @@
                   <a href="https://successor-heads.notion.site/">project page</a>
                   /
                   <a href="https://x.com/rgould0/status/1737261015245451399">tweeprint</a>
-                  <p>We discovered <em>successor heads</em>: attention heads present in a range of LLMs that increment tokens from ordinal sequences (e.g. numbers, months and days). We isolated a common numeric subspace within embedding space, that for any given token (e.g. 'February'), encodes the index of that token within its ordinal sequence (e.g. months). We also found that numeric token representations can be decomposed into interpretable features representing the value of the token <em>mod 10</em>, which can be used to edit the numeric value of the representation via vector arithmetic.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/hijacks.png" alt="hijacks" width="160" height="160">
-                </td>
-                <td width="75%" valign="middle">
-                  <a href="https://arxiv.org/pdf/2309.00236.pdf">
-                    <span class="papertitle">Image Hijacks: Adversarial Images can Control Generative Models at
-                      Runtime</span>
-                  </a>
-                  <br>
-                  <a href="https://petar-v.com/">Luke Bailey</a>*, <strong>Euan Ong*</strong>, <a
-                    href="http://people.eecs.berkeley.edu/~russell/">Stuart Russell</a>, <a
-                    href="http://scottemmons.com/">Scott Emmons</a> (* denotes equal contribution)
-                  <br>
-                  <em>ICML</em>, 2024
-                  <br>
-                  <a href="https://arxiv.org/abs/2309.00236">arXiv</a>
-                  /
-                  <a href="https://image-hijacks.github.io/">project page + demo</a>
-                  /
-                  <a href="https://twitter.com/emmons_scott/status/1704166628089565262">tweeprint</a>
-                  <p>We discovered that adversarial images can hijack the behaviour of vision-language models (VLMs) at
-                    runtime. We developed a general method for crafting these <i>image hijacks</i>,
-                    and trained image hijacks forcing VLMs to output arbitrary text, leak their context window and
-                    comply with harmful instructions. We also derived an algorithm to train hijacks forcing 
-                    VLMs to behave as though they were given an arbitrary prompt, which we used to make them believe the Eiffel Tower is in Rome.
+                  <p>We discovered <em>successor heads</em>: attention heads present in a range of LLMs that increment
+                    tokens from ordinal sequences (e.g. numbers, months and days). We isolated a common numeric subspace
+                    within embedding space, that for any given token (e.g. 'February'), encodes the index of that token
+                    within its ordinal sequence (e.g. months). We also found that numeric token representations can be
+                    decomposed into interpretable features representing the value of the token <em>mod 10</em>, which
+                    can be used to edit the numeric value of the representation via vector arithmetic.
                   </p>
                 </td>
               </tr>
@@ -218,20 +205,169 @@
 
               <tr>
                 <td colspan="2">
+                  <h3 style="padding-left: 20px;">Featured work (robustness)</h3>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+                  <img src="images/cc3.jpeg" alt="constitutional classifiers" height="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/pdf/2501.18837.pdf">
+                    <span class="papertitle">Constitutional classifiers: Defending against universal jailbreaks across
+                      thousands of hours of red teaming</span>
+                  </a>
+                  <br>
+                  <a href="https://www.mrinanksharma.net/">Mrinank Sharma</a>*, <a href="https://www.megtong.com/">Meg
+                    Tong</a>*, <a href="https://jesse.mu/">Jesse Mu</a>*, <a href="https://www.jerrywei.net/home">Jerry
+                    Wei</a>*, <a href="https://scholar.google.com/citations?user=aJWdfR4AAAAJ&hl=en">Jorrit
+                    Kruthoff</a>*, <a href="https://scholar.google.com/citations?user=HwatFwIAAAAJ&hl=en">Scott
+                    Goodfriend</a>*, <b>Euan
+                    Ong*</b>,
+                  <a href="https://scholar.google.com/citations?user=c5PO2pgAAAAJ&hl=en">Alwin Peng</a>, ..., <a
+                    href="https://jan.leike.name/">Jan Leike</a>,
+                  <a href="https://sites.krieger.jhu.edu/jared-kaplan/">Jared Kaplan</a>, <a
+                    href="https://ethanperez.net/">Ethan Perez</a> (* denotes equal contribution)
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2501.18837">arXiv</a>
+                  /
+                  <a href="https://www.anthropic.com/news/constitutional-classifiers">Anthropic article</a>
+                  /
+                  <a href="https://x.com/AnthropicAI/status/1886452489681023333">tweeprint</a>
+                  <p>We built a system of constitutional classifiers to prevent jailbreaks. A prototype version of our
+                    system withstood over 3,000 hours of expert red teaming with no universal jailbreaks found. Newer
+                    versions of our system also have minimal over-refusals and moderate run-time overhead.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/hijacks.png" alt="hijacks" width="160" height="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/pdf/2309.00236.pdf">
+                    <span class="papertitle">Image Hijacks: Adversarial Images can Control Generative Models at
+                      Runtime</span>
+                  </a>
+                  <br>
+                  <a href="https://lukebailey181.github.io/">Luke Bailey</a>*, <strong>Euan Ong*</strong>, <a
+                    href="http://people.eecs.berkeley.edu/~russell/">Stuart Russell</a>, <a
+                    href="http://scottemmons.com/">Scott Emmons</a> (* denotes equal contribution)
+                  <br>
+                  <em>ICML</em>, 2024
+                  <br>
+                  <a href="https://arxiv.org/abs/2309.00236">arXiv</a>
+                  /
+                  <a href="https://image-hijacks.github.io/">project page + demo</a>
+                  /
+                  <a href="https://twitter.com/emmons_scott/status/1704166628089565262">tweeprint</a>
+                  <p>We discovered that adversarial images can hijack the behaviour of vision-language models (VLMs) at
+                    runtime. We developed a general method for crafting these <i>image hijacks</i>,
+                    and trained image hijacks forcing VLMs to output arbitrary text, leak their context window and
+                    comply with harmful instructions. We also derived an algorithm to train hijacks forcing
+                    VLMs to behave as though they were given an arbitrary prompt, which we used to make them believe the
+                    Eiffel Tower is in Rome.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
                   <h3 style="padding-left: 20px;">Other projects</h3>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/agents.jpeg" alt="agents" width="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <!-- <a href="https://example.com"> -->
+                  <a href="https://alignment.anthropic.com/2025/automated-auditing/">
+                    <span class="papertitle">Building and Evaluating Alignment Auditing Agents</span>
+                  </a>
+                  <br>
+                  Trenton Bricken, Rowan Wang, Sam Bowman, <strong>Euan Ong</strong>, Johannes Treutlein, Jeff Wu, Evan
+                  Hubinger, Samuel Marks
+                  <br>
+                  <em>Anthropic Alignment Science Blog</em>, 2025
+                  <br>
+                  <a href="https://alignment.anthropic.com/2025/automated-auditing/">paper</a>
+                  /
+                  <a href="https://x.com/AnthropicAI/status/1948433493102403876">tweeprint</a>
+                  <p>We developed three AI agents to autonomously complete alignment auditing tasks. In testing, our
+                    agents successfully uncovered hidden goals, built safety evaluations, and surfaced concerning
+                    behaviors. I helped to build the infrastructure for the experiments in this paper.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/probes.png" alt="probes" width="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <!-- <a href="https://example.com"> -->
+                  <a href="https://alignment.anthropic.com/2025/cheap-monitors/">
+                    <span class="papertitle">Cost-Effective Constitutional Classifiers via Representation Re-use</span>
+                  </a>
+                  <br>
+                  Hoagy Cunningham, Alwin Peng, Jerry Wei, <strong>Euan Ong</strong>, Fabien Roger, Linda Petrini, Misha
+                  Wagner, Vladimir Mikulik, Mrinank Sharma
+                  <br>
+                  <em>Anthropic Alignment Science Blog</em>, 2025
+                  <br>
+                  <a href="https://alignment.anthropic.com/2025/cheap-monitors/">paper</a>
+                  <p>We benchmark approaches to re-using LLM internals to make LLM monitoring more cost-effective. I
+                    helped to build the infrastructure for the evaluations in this paper.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/auditing.jpeg" alt="auditing" width="160">
+                </td>
+                <td width="75%" valign="middle">
+                  <!-- <a href="https://example.com"> -->
+                  <a
+                    href="https://www.cam.ac.uk/research/news/claims-ai-can-boost-workplace-diversity-are-spurious-and-dangerous-researchers-argue">
+                    <span class="papertitle">Auditing Language Models for Hidden Objectives</span>
+                  </a>
+                  <br>
+                  Samuel Marks*, Johannes Treutlein*, Trenton Bricken, Jack Lindsey, Jonathan Marcus, Siddharth
+                  Mishra-Sharma, Daniel Ziegler, ..., <strong>Euan Ong</strong>, ... , Kelley Rivoire, Adam
+                  Jermyn, Monte MacDiarmid, Tom Henighan, Evan Hubinger
+                  (* denotes equal contribution)
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2503.10965">arXiv</a>
+                  /
+                  <a href="https://www.anthropic.com/research/auditing-hidden-objectives">Anthropic article</a>
+                  /
+                  <a href="https://x.com/AnthropicAI/status/1900217234825634236">tweeprint</a>
+                  <p>We deliberately train a language model with a hidden objective and use it as a testbed for studying
+                    alignment audits. I participated in the auditing game, on the team with only black-box model
+                    access.
+                  </p>
                 </td>
               </tr>
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/personality.jpg" alt="attention heads" width="160">
+                  <img src="images/personality.jpg" alt="personality machine" width="160">
                 </td>
                 <td width="75%" valign="middle">
                   <!-- <a href="https://example.com"> -->
-                  <a href="https://www.cam.ac.uk/research/news/claims-ai-can-boost-workplace-diversity-are-spurious-and-dangerous-researchers-argue">
+                  <a
+                    href="https://www.cam.ac.uk/research/news/claims-ai-can-boost-workplace-diversity-are-spurious-and-dangerous-researchers-argue">
                     <span class="papertitle">Personality Machine</span>
                   </a>
                   <br>
-                  <strong>Euan Ong</strong>*, 
+                  <strong>Euan Ong</strong>*,
                   <a href="https://www.linkedin.com/in/jamie-chen-a186161b4/">Jamie Chen</a>*,
                   <a href="https://www.linkedin.com/in/kyra-zhou/">Kyra Zhou</a>*,
                   <a href="https://www.linkedin.com/in/marcus-handley-a2a6b1179/">Marcus Handley</a>*,
@@ -249,11 +385,17 @@
                   <a href="https://example.com">reviews</a>
                   /
                   <a href="https://example.com">bibTeX</a>-->
-                  <p>In collaboration with the Centre for Gender Studies at Cambridge, we built a tool highlighting the questionable logic behind the use of AI-driven personality assessments often used in hiring. Our tool demonstrates how arbitrary changes in facial expression, clothing, lighting and background can give radically different personality readings, and was featured in <a href="https://www.bbc.co.uk/news/technology-63228466">the BBC</a> and <a href="https://www.telegraph.co.uk/news/2022/10/10/why-shouldnt-wear-glasses-interview-robot/">the Telegraph</a>.
+                  <p>In collaboration with the Centre for Gender Studies at Cambridge, we built a tool highlighting the
+                    questionable logic behind the use of AI-driven personality assessments often used in hiring. Our
+                    tool demonstrates how arbitrary changes in facial expression, clothing, lighting and background can
+                    give radically different personality readings, and was featured in <a
+                      href="https://www.bbc.co.uk/news/technology-63228466">the BBC</a> and <a
+                      href="https://www.telegraph.co.uk/news/2022/10/10/why-shouldnt-wear-glasses-interview-robot/">the
+                      Telegraph</a>.
                   </p>
                 </td>
               </tr>
-              
+
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="images/ddl.png" alt="attention heads" width="160" height="160">
@@ -301,8 +443,8 @@
                       Networks</span>
                   </a>
                   <br>
-                  <strong>Euan Ong</strong>, 
-                  <a href="https://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>, 
+                  <strong>Euan Ong</strong>,
+                  <a href="https://www.cs.ox.ac.uk/people/niki.trigoni/">Niki Trigoni</a>,
                   <a href="https://portobgusmao.com/">Pedro Porto Barque de Gusmão</a>
                   <br>
                   <em>Technical report</em>, 2019
@@ -318,6 +460,31 @@
                     We trained a Faster R-CNN object detection network to identify landmarks (e.g. doors and windows) in
                     thermal images of indoor environments, with applications in the development of navigational aids for
                     search and rescue operations.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>miscellanea</h2>
+                  <p>
+                    research aside, I love communities and spaces that help people live more meaningful lives.
+                  </p>
+                  <p>
+                    during my time at Cambridge, I started <a href="https://luma.com/scaledown"><tt
+                        style="font-size: small;">[scale
+                        down]</tt></a>, a co-working group to help students make space for the things they care about;
+                    over the years, this sprouted more nodes across the UK, and grew into a national student-run
+                    collective
+                    called <a href="https://ensemble.rodeo/">ensemble</a>.
+                  </p>
+                  <p>
+                    more recently, I wrote some perhaps-unorthodox <a
+                      href="https://space.ong.ac/escaping-flatland">career advice for
+                      undergrads</a> (<a href="https://x.com/NeelNanda5/status/1880677621140435086">reviews</a>).
                   </p>
                 </td>
               </tr>
