@@ -37,8 +37,8 @@
                     Euan Ong
                   </p>
                   <p>I've just finished my undergraduate degree in Computer Science at the University of Cambridge
-                    (where I ranked 1st / ~120 every year). I'm currently working on interpretability (previously
-                    adversarial robustness) at <a href="https://www.anthropic.com/">Anthropic</a>.
+                    (where I ranked 1st / ~120 every year). I'm currently working on interpretability at <a
+                      href="https://www.anthropic.com/">Anthropic</a>.
                     <!--before starting a Ph.D. in 'abstractions-first' mechanistic interpretability at <a href="https://csail.mit.edu/">MIT</a> with <a href="https://www.mit.edu/~jda/">Jacob Andreas</a> and <a href="https://people.csail.mit.edu/asolar/">Armando Solar-Lezama</a>.-->
                   </p>
                   <p>
@@ -50,8 +50,10 @@
                       user</a>.
                   </p>
                   <p>
-                    To this end, I'm interested in both pragmatic, scaling-friendly approaches to <a
-                      href="https://arxiv.org/abs/2412.08686">elicit latent knowledge</a> from neural networks, and
+                    To this end, I'm interested in both pragmatic, <a
+                      href="https://www.lesswrong.com/posts/qkhwh4AdG7kXgELCD/scalable-end-to-end-interpretability">scaling-friendly</a>
+                    approaches to <a href="https://arxiv.org/abs/2412.08686">elicit latent knowledge</a> from neural
+                    networks, and
                     longer-term bets exploring how the mathematical toolkits we use to understand and structure programs
                     (such as <a href="https://ai.stanford.edu/blog/causal-abstraction/">formal methods</a>,
                     <a href="https://colah.github.io/posts/2015-09-NN-Types-FP/">types</a> and <a
@@ -83,21 +85,28 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    So far, my research has broadly focused on studying the behaviour of neural networks <i>in
+                    It seems to me that, if we are to understand neural networks, we must find some way to tame their
+                    complexity: either by searching for abstractions that let us decompose them into intelligible parts,
+                    or by training other neural networks to do it for us.
+                  </p>
+                  <p>
+                    These days, I mostly train LLMs to explain model internals in
+                    natural language, with the hope of ultimately recovering compositional natural-language explanations
+                    of model weights and activations. (If you're keen to work on this, <a
+                      href="https://x.com/euan_ong/status/2059794684843811289?s=20">try something interesting and
+                      tell me how
+                      it
+                      went</a>!)
+                  </p>
+                  <p>
+                    Previously, I studied the behaviour of neural networks <i>in
                       vitro</i>:
                     understanding both how they generalise when learning to perform abstract tasks, and
                     what
                     this tells us about the algorithms they've learned in order to do so.
                   </p>
                   <p>
-                    Previously, I've probed the foundations of <a href="https://arxiv.org/abs/2105.02761">neural
-                      algorithmic
-                      reasoning</a>, explored attacks on vision-language models, and poked language model
-                    representations
-                    with a stick.
-                  </p>
-                  <p>
-                    More recently, I've also done some work on <a>adversarial robustness</a>, mostly at Anthropic.
+                    I've also done some work on adversarial robustness.
                   </p>
                 </td>
               </tr>
@@ -109,7 +118,84 @@
 
               <tr>
                 <td colspan="2">
-                  <h3 style="padding-left: 20px;">Featured work (reasoning & interpretability)</h3>
+                  <h3 style="padding-left: 20px;">Featured work (scalable, end-to-end interpretability)</h3>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+                  <img src="images/nla.png" alt="natural language autoencoders"
+                    style="width: 160px; height: 160px; object-fit: contain;">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://transformer-circuits.pub/2026/nla/index.html">
+                    <span class="papertitle">Natural Language Autoencoders Produce Unsupervised Explanations of LLM
+                      Activations</span>
+                  </a>
+                  <br>
+                  <a href="https://kitft.com/">Kit Fraser-Taliente</a>*,
+                  <a href="https://www.subhashk.com/">Subhash Kantamneni</a>*,
+                  <b>Euan Ong*</b>,
+                  <a href="https://dmossing.github.io/">Dan Mossing</a>,
+                  <a href="https://christina.lu/">Christina Lu</a>,
+                  <a href="https://pbogdan.com/">Paul C. Bogdan</a>, ...,
+                  <!--<a href="https://evhub.github.io/">Evan Hubinger</a>,
+                  <a href="https://www.linkedin.com/in/joshua-batson-63ab9a82/">Joshua Batson</a>,
+                  <a href="https://jlindsey15.github.io/">Jack Lindsey</a>,-->
+                  <a href="https://x.com/Ferrum_of_omega">Samuel Zimmerman</a>,
+                  <a href="https://people.math.harvard.edu/~smarks/">Samuel Marks</a> (* denotes equal contribution;
+                  author
+                  order alphabetical)
+                  <br>
+                  <em>Transformer Circuits Thread</em>, 2026
+                  <br>
+                  <a href="https://transformer-circuits.pub/2026/nla/index.html">paper</a>
+                  /
+                  <a href="https://x.com/AnthropicAI/status/2052435436157452769">tweeprint</a>
+                  <p>We introduce Natural Language Autoencoders (NLAs), an unsupervised method using cycle-consistency
+                    training to generate natural
+                    language explanations of LLM activations. During our pre-deployment audit of Claude Opus 4.6, NLAs
+                    helped diagnose safety-relevant behaviors and surfaced unverbalized evaluation awareness.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+                  <img src="images/ao.jpeg" alt="activation oracles"
+                    style="width: 160px; height: 160px; object-fit: contain;">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2512.15674">
+                    <span class="papertitle">Activation Oracles: Training and Evaluating LLMs as General-Purpose
+                      Activation Explainers
+                    </span>
+                  </a>
+                  <br>
+                  <a href="https://adamkarvonen.github.io/">Adam Karvonen</a>,
+                  <a href="https://jameschua.net/about/">James Chua</a>,
+                  ...,
+                  <b>Euan Ong</b>,
+                  ...,
+                  <a href="https://owainevans.github.io/">Owain Evans</a>,
+                  <a href="https://people.math.harvard.edu/~smarks/">Samuel Marks</a>
+                  <br>
+                  <em>ICLR (Oral)</em>, 2026
+                  <br>
+                  <a href="https://arxiv.org/abs/2512.15674">arXiv</a>
+                  /
+                  <a href="https://x.com/OwainEvans_UK/status/2001715774105522195">tweeprint</a>
+                  <p>We train Activation Oracles: LLMs that decode their own neural activations and answer questions
+                    about them in natural language. We find surprising generalisation: for instance, our AOs uncover
+                    misaligned goals in fine-tuned
+                    models, without training to do so.</p>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <h3 style="padding-left: 20px;">Featured work (structure & abstraction)</h3>
                 </td>
               </tr>
 
@@ -479,12 +565,13 @@
                         down]</tt></a>, a co-working group to help students make space for the things they care about;
                     over the years, this sprouted more nodes across the UK, and grew into a national student-run
                     collective
-                    called <a href="https://ensemble.rodeo/">ensemble</a>.
+                    called <a href="https://ensemble.rodeo/"><tt style="font-size: small;">ensemble</tt></a>.
                   </p>
                   <p>
                     more recently, I wrote some perhaps-unorthodox <a
                       href="https://space.ong.ac/escaping-flatland">career advice for
-                      undergrads</a> (<a href="https://x.com/NeelNanda5/status/1880677621140435086">reviews</a>).
+                      undergrads</a> (reviews <a href="https://x.com/NeelNanda5/status/1880677621140435086">1</a>, <a
+                      href="https://x.com/fhuszar/status/2024561316573434160">2</a>).
                   </p>
                 </td>
               </tr>
